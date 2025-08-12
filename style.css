@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  background-color: black;
+  color: white;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* 
+ul {
+  list-style: none;
+} */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto 50px auto;
+}
+
+.hero__title {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.navigation__item a {
+  color: white;
+  padding: 14px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.navigation__item {
+  border-bottom: 2px solid transparent;
+  position: relative;
+}
+
+.navigation__item::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  top: 60px;
+  background-color: #cae100;
+  transition: width 0.4s ease;
+}
+
+.navigation__item:hover::before {
+  width: 90%;
+}
+
+.navigation__item--tag a {
+  background-color: #cae100;
+  border-radius: 5px;
+  color: black;
+}
+
+.navigation__item--tag a:hover {
+  background-color: black;
+  border-radius: 5px;
+  color: #cae100;
+}
+
+.content {
+  margin: 0 auto;
+}
+
+.content__title {
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.plans {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background-color: #20262b;
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card__subtitle {
+  font-weight: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border-bottom: 1.5px solid #cae100;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.card__price {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.card__price--tag {
+  font-size: 1rem;
+}
+
+.card__list {
+  list-style-position: inside;
+  margin-bottom: 40px;
+}
+
+.card__feature {
+  color: #666c74;
+  margin-bottom: 5px;
+}
+
+.card__feature::marker {
+  color: #cae100;
+}
+
+.card__btn {
+  padding: 10px;
+  background-color: #cae100;
+  border-radius: 4px;
+  margin-top: auto;
+  text-align: center;
+  color: #20262b;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+.card__btn:hover {
+  background-color: #90a001;
+  transform: translateY(-10px);
+}
