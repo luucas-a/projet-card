@@ -1,4 +1,4 @@
 #PROJECT-CARD
 ## Welcome! 👋
 
-!(./plan.png)
+![Design preview for the QR code component coding challenge](./plan.png)
