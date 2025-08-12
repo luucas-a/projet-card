@@ -52,7 +52,7 @@ ul {
   position: relative;
 }
 
-.navigation__item::before {
+.navigation__item:not(.navigation__item--tag)::before {
   position: absolute;
   content: "";
   width: 0;
@@ -70,12 +70,7 @@ ul {
   background-color: #cae100;
   border-radius: 5px;
   color: black;
-}
-
-.navigation__item--tag a:hover {
-  background-color: black;
-  border-radius: 5px;
-  color: #cae100;
+  pointer-events: none;
 }
 
 .content {
